@@ -16,11 +16,18 @@ public class MainController {
  
     @Autowired
     private DepartmentService deptService;
- 
+
     @RequestMapping(value = { "/", "/welcome" }, method = RequestMethod.GET)
     public String welcomePage(Model model) {
         List<Department> list = deptService.listDepartment();
         model.addAttribute("departments", list);
         return "index";
+    }
+
+    @RequestMapping(value = { "/other" }, method = RequestMethod.GET)
+    public String welcomeOtherPage(Model model) {
+        List<Department> list = deptService.listDepartment();
+        model.addAttribute("departments", list);
+        return "other";
     }
 }

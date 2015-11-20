@@ -1,3 +1,5 @@
+#set($layout="/WEB-INF/layouts/layout_other.vm")
+
 <h1>Index</h1>
  
 <h2>Department list</h2>
@@ -9,7 +11,7 @@
 </tr>
 #foreach($dept in $departments)
    <tr>
-    <td>$velocityCount</td>
+       <td>other</td>
     <td>$dept.deptNo</td>
     <td>$dept.deptName</td>
    </tr>

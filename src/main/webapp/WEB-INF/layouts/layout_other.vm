@@ -3,12 +3,9 @@
     <title>Spring & Velocity</title>
 </head>
 <body>
-<div>
-    #parse("/WEB-INF/fragments/_header.vm")
-</div>
 
 <div>
-
+<h1>other layout</h1>
     <!-- View abc.vm is inserted here -->
     <!-- Noi dung View abc.vm se duoc tren tai day -->
     $screen_content
